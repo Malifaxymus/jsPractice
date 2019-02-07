@@ -1,0 +1,12 @@
+//It's Rock Paper Scissors, not super hard to understand
+function rockPaperScissors(move){
+ let cpu= Math.ceil(Math.random()*3)
+  if(move==='rock'&&cpu===1||move==='paper'&&cpu===2||move==='scissors'&&cpu===3){
+    return "You Win!"
+  }else if(move==='rock'&&cpu===2||move==='paper'&&cpu===3||move==='scissors'&&cpu===1){
+    return "You Tied!"
+  }else{
+    return "You Lose!"
+  }
+};
+console.log(rockPaperScissors('paper'))
